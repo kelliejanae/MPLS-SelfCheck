@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/opac-tmpl/bootstrap/lib/jquery/jquery_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/lib/jquery/jquery-ui_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/js/datatables_18.1107000.js"></script>
+  <script src="/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/lib/bootstrap/js/bootstrap.min_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/lib/fontfaceobserver.min_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/js/global_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/js/basket_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/js/tags_18.1107000.js"></script>
+  <script src="/opac-tmpl/bootstrap/lib/jquery/plugins/jquery.cookie.min_18.1107000.js"></script>
+  <script src="http://malsup.github.io/jquery.cycle.all.js"></script>
+  <script src="/plugin/Koha/Plugin/Com/ByWaterSolutions/Bibliotheca/js/cloudlibrary.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/core/jquery.cycle2.core.min.js"></script>
+  <title>Koha Self Checkout</title>
+
+</head>
+
+<body>
+
+<!--<header><img class="sco_header" src="https://i.imgur.com/0rlN3Gw.png" alt="OPAC Header"/></header>-->
+
+<section><!--ADD SCROLLING CAROUSEL IMAGES IN DIV BELOW-->  
+<div class="selfcheck-wrapper">
+  <div id="selfcheck-slideshow" class="selfcheck-slideshow">
+      <img class="selfcheck-slide active" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/Anime_Spring2020_1920x1080.jpg" alt="Anime Spring 2020">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/GenealogyAssistance_1920X1080.jpg" alt="Genealogy Assistance">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/MedicareLib_Feb2020_1920x1080.jpg" alt="Medicare Lib">
+	  <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/MorningMeetup_1920X1080.jpg" alt="Morning Meetup">
+	  <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/RecycledBookCraft_Spring2020_1920X1080.jpg" alt="Recycled Book Craft">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/SensoryStoryTime_1920X1080.jpg" alt="Sensory Story Time">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/TravelSmart_Spring2020_1920x1080.jpg" alt="Travel Smart">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/TrueCrime__1920X1080.jpg" alt="True Crime">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/fb20b0ec05207978b6d7a550d2c1fc75764f8248/neighbors_Spring2020_1920x1080.jpg" alt="Neighbors">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/AdultAnime_1920X1080.jpg" alt="Adult Anime">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/BasicAutomotive_Spring2020_1920X1080.jpg" alt="Basic Automotive">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/Blackwork_Nov2019_1920X1080.jpg" alt="Blackwork">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/FinancialLiteracy_May2020_1920X1080.jpg" alt="Financial Literacy for Seniors">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/LeapYear2020_1920X1080.jpg" alt="Leap Year">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/SlimeScience_1920X1080.jpg" alt="Slime Science">
+      <img class="selfcheck-slide" src="https://raw.githubusercontent.com/mckinneylibrary/images/cc11da6bff57f7f43b31bbc0557c18e11a889734/SolarPower_spring2020_1920X1080.jpg" alt="Solar Power">
+    <img class="selfcheck-slide" src="https://github.com/mckinneylibrary/images/blob/62a6a67548f21a75618b8f2ed3e25b798fc1da06/DisneyTravelTips_April2020_1920X1080.jpg?raw=true" alt="Disney Travel Tips">
+    <img class="selfcheck-slide" src="https://github.com/mckinneylibrary/images/blob/62a6a67548f21a75618b8f2ed3e25b798fc1da06/EarthDay_April2020_1920X1080.jpg?raw=true" alt="Earth Day">
+    <img class="selfcheck-slide" src="https://github.com/mckinneylibrary/images/blob/62a6a67548f21a75618b8f2ed3e25b798fc1da06/FamilySearch_April2020_1920X1080.jpg?raw=true" alt="Family Search">
+    <img class="selfcheck-slide" src="https://github.com/mckinneylibrary/images/blob/62a6a67548f21a75618b8f2ed3e25b798fc1da06/FinancialLiteracy_March2020_1920X1080.jpg?raw=true" alt="Financial Literacy">
+    <img class="selfcheck-slide" src="https://github.com/mckinneylibrary/images/blob/62a6a67548f21a75618b8f2ed3e25b798fc1da06/LiteraryHeroes2020_1920x1080.jpg?raw=true" alt="Literary HERoes">
+  </div>
+</div>
+  
+</section>
+
+<section>   
+   <div class="selfcheck-footer">
+        <img class="selfcheck-mckinneylogo" src="https://www.mckinneytexas.org/ImageRepository/Document?documentID=17945" alt="Mckinney Logo">
+        <p id="selfcheck-footertext">
+          <strong>McKinney Public Library System</strong><br>
+          Ph: (972) 547-7323 | eMail: Contact-Library@mckinneytexas.org <br>
+          Hours : Monday-Thursday 10:00 a.m. - 9:00 p.m. | Friday-Saturday 10:00 a.m. - 6:00 p.m. | Sunday 1:00 p.m. - 5:00 p.m. <br><br>
+          Powered by <i>Koha</i>
+        </p>
+   </div> 
+</section>
+  
+</body>
+</html>
